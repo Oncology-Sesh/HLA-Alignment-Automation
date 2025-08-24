@@ -4,7 +4,7 @@
 # It aligns these sequence's using the DECIPHER package.
 # Finally the alighnment is then printed as per the IPD-IMGT format. 
 
-#################### Libraries ##########################################
+# ----------------------------- Libraries -----------------------------
 library(httr2)
 library(readr)
 library(jsonlite)
@@ -15,7 +15,11 @@ library(Biostrings)
 library(DECIPHER)
 library(readxl)
 
-#################### Data Aquisition and Wrangling ##########################################
+# ----------------------------- Set Path -----------------------------
+setwd("C:/Users/wells/Documents/Github/HLA-Alignment-Automation")
+
+# -------------------- Data Aquisition and Wrangling ----------------
+
 # Get Data from patient file
 # Summary
 # This code:
@@ -46,7 +50,7 @@ allele2 = paste0(locus,"*",allele2)
 #################### Fetch Sequence and Perform Alignment ##########################################
 # get IDs
 print("Finding IDs...")
-Allelelist_390 <- read_csv("../data/Allelelist.390.txt",comment = "#", show_col_types = FALSE)
+Allelelist_390 <- read_csv("data/Allelelist.390.txt",comment = "#", show_col_types = FALSE)
 ID1 = Allelelist_390$AlleleID[Allelelist_390$Allele==allele1]
 ID2 = Allelelist_390$AlleleID[Allelelist_390$Allele==allele2]
 
@@ -230,7 +234,7 @@ get_alt_codon_label_line <- function(block_start,block_end,codon_size,codon_star
 #################### Generate Output Alignment files ##########################################
 # Step 8: Print annotated alignment block-by-block
 
-output_file <- paste0("../results/Alignment_",locus,".txt")
+output_file <- paste0("results/Alignment_",locus,".txt")
 sink(output_file)
 cat("CODON-ALIGNED ANNOTATED ALIGNMENT vs Reference: HLA00434", "\n")
 codon_size <- 3

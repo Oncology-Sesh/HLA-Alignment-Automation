@@ -1,0 +1,74 @@
+AA Codon                           -20                 -15                 -10                  -5                    1 
+ B*07:02:01:01      ATG CTG GTC ATG GCG CCC CGA ACC GTC CTC CTG CTG CTC TCG GCG GCC CTG GCC CTG ACC GAG ACC TGG GCC G|GC 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -|-- 
+ B*27:05:02         --- -G- --- -C- --- --- --- --- C-- --- --- --- --- -G- -G- --A G-- --- --- --- --- --- --- --T -|-- 
+ 
+ AA Codon                         5                  10                  15                  20                  25     
+ B*07:02:01:01      TCC CAC TCC ATG AGG TAT TTC TAC ACC TCC GTG TCC CGG CCC GGC CGC GGG GAG CCC CGC TTC ATC TCA GTG GGC 
+ B*08:01:01         --- --- --- --- --- --- --- G-- --- G-- A-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --- --- C-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- A-C --- --- 
+ 
+ AA Codon                        30                  35                  40                  45                  50     
+ B*07:02:01:01      TAC GTG GAC GAC ACC CAG TTC GTG AGG TTC GAC AGC GAC GCC GCG AGT CCG AGA GAG GAG CCG CGG GCG CCG TGG 
+ B*08:01:01         --- --- --- --- --G --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --G -T- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                        55                  60                  65                  70                  75     
+ B*07:02:01:01      ATA GAG CAG GAG GGG CCG GAG TAT TGG GAC CGG AAC ACA CAG ATC TAC AAG GCC CAG GCA CAG ACT GAC CGA GAG 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -T- --- A-- A-C A-- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- G-G --- --- --- -G- --- --- A-- --- --- --- --- --- --- 
+ 
+ AA Codon                        80                  85                  90                   95                 100     
+ B*07:02:01:01      AGC CTG CGG AAC CTG CGC GGC TAC TAC AAC CAG AGC GAG GCC G|GG TCT CAC ACC CTC CAG AGC ATG TAC GGC TGC 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- -|-- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         GA- --- --- -C- --- -T- C-- --- --- --- --- --- --- --- -|-- --- --- --- --- --- -AT --- --T --- --- 
+ 
+ AA Codon                       105                 110                 115                 120                 125     
+ B*07:02:01:01      GAC GTG GGG CCG GAC GGG CGC CTC CTC CGC GGG CAT GAC CAG TAC GCC TAC GAC GGC AAG GAT TAC ATC GCC CTG 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- A-- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- T-C C-- --- G-- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       130                 135                 140                 145                 150     
+ B*07:02:01:01      AAC GAG GAC CTG CGC TCC TGG ACC GCC GCG GAC ACG GCG GCT CAG ATC ACC CAG CGC AAG TGG GAG GCG GCC CGT 
+ B*08:01:01         --- --- --- --- --- --- --- --- --G --- --- --C --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- A-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       155                 160                 165                 170                 175     
+ B*07:02:01:01      GAG GCG GAG CAG CGG AGA GCC TAC CTG GAG GGC GAG TGC GTG GAG TGG CTC CGC AGA TAC CTG GAG AAC GGG AAG 
+ B*08:01:01         -T- --- --- --- GAC --- --- --- --- --- --- AC- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         -T- --- --- --- -T- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       180                  185                 190                 195                 200     
+ B*07:02:01:01      GAC AAG CTG GAG CGC GCT G|AC CCC CCA AAG ACA CAC GTG ACC CAC CAC CCC ATC TCT GAC CAT GAG GCC ACC CTG 
+ B*08:01:01         --- -C- --- --- --- --G -|-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --G -C- --- C-- --- --G -|-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       205                 210                 215                 220                 225     
+ B*07:02:01:01      AGG TGC TGG GCC CTG GGT TTC TAC CCT GCG GAG ATC ACA CTG ACC TGG CAG CGG GAT GGC GAG GAC CAA ACT CAG 
+ B*08:01:01         --- --- --- --- --- --C --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --C --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       230                 235                 240                 245                 250     
+ B*07:02:01:01      GAC ACT GAG CTT GTG GAG ACC AGA CCA GCA GGA GAT AGA ACC TTC CAG AAG TGG GCA GCT GTG GTG GTG CCT TCT 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       255                 260                 265                 270                  275     
+ B*07:02:01:01      GGA GAA GAG CAG AGA TAC ACA TGC CAT GTA CAG CAT GAG GGG CTG CCG AAG CCC CTC ACC CTG AGA TGG G|AG CCG 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -|-- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -|-- --- 
+ 
+ AA Codon                       280                 285                 290                 295                 300     
+ B*07:02:01:01      TCT TCC CAG TCC ACC GTC CCC ATC GTG GGC ATT GTT GCT GGC CTG GCT GTC CTA GCA GTT GTG GTC ATC GGA GCT 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+ 
+ AA Codon                       305                 310                  315                 320                  325     
+ B*07:02:01:01      GTG GTC GCT GCT GTG ATG TGT AGG AGG AAG AGT TCA G|GT GGA AAA GGA GGG AGC TAC TCT CAG GCT GCG T|GC AGC 
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --C --- -|-- --- --- --- --- --- --- --- --- --- --- -|-- --- 
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --C --- -|-- --- --- --- --- --- --- --- --- --- --- -|-- --- 
+ 
+ AA Codon                       330                 335                 
+ B*07:02:01:01      GAC AGT GCC CAG GGC TCT GAT GTG TCT CTC ACA GCT TGA             
+ B*08:01:01         --- --- --- --- --- --- --- --- --- --- --- --- ---             
+ B*27:05:02         --- --- --- --- --- --- --- --- --- --- --- --- ---             
