@@ -165,21 +165,43 @@ get_alt_codon_label_line <- function(block_start,block_end,codon_size,codon_star
 
 
 #################### FUNCTION-4: Fetch, Align and output ##########################################
-
-generate_hla_alighnment <- function(allele1, allele2, locus, filepath){
+#' Generate HLA Alignment
+#'
+#' @param allele1 Character. First patient allele (e.g., "A*01:01:01").
+#' @param allele2 Character. Second patient allele (e.g., "A*26:01:01:01").
+#' @param locus Character. HLA locus: "A", "B", or "C".
+#' @param filepath Character. Output file path prefix.
+#' @param reference Character (optional). Custom reference allele (e.g., "A*02:01:01:01").
+#'        If NULL, uses default references: A*03:01:01:01, B*07:02:01:01, or C*07:02:01:01.
+#'
+#' @return A list containing output_file path and codon labels.
+#'
+generate_hla_alighnment <- function(allele1, allele2, locus, filepath, reference = NULL){
   print("Finding IDs...")
   Allelelist_390 <- read_csv("data/Allelelist.390.txt",comment = "#", show_col_types = FALSE)
   ID1 = Allelelist_390$AlleleID[Allelelist_390$Allele==allele1]
   ID2 = Allelelist_390$AlleleID[Allelelist_390$Allele==allele2]
-  # reference allele logic from Mike's code
-  if (locus == "A"){
-    IDref = "HLA00037"
-  }
-  if (locus == "B") {
-    IDref = "HLA00132"
-  }
-  if (locus == "C"){
-    IDref = "HLA00434"
+
+  # Reference allele logic: use custom reference if provided, otherwise use defaults
+  if (!is.null(reference)) {
+    # User specified a custom reference allele
+    IDref = Allelelist_390$AlleleID[Allelelist_390$Allele == reference]
+    if (length(IDref) == 0) {
+      stop(paste("Reference allele not found in database:", reference))
+    }
+    print(paste("Using custom reference allele:", reference))
+  } else {
+    # Use default reference alleles per locus
+    if (locus == "A"){
+      IDref = "HLA00037"
+    } else if (locus == "B") {
+      IDref = "HLA00132"
+    } else if (locus == "C"){
+      IDref = "HLA00434"
+    } else {
+      stop(paste("Unknown locus:", locus, "- must be A, B, or C"))
+    }
+    print(paste("Using default reference for locus", locus))
   }
   allele_ref <- Allelelist_390$Allele[Allelelist_390$AlleleID==IDref] # Allele reference file
   coding0 <- query_HLA(IDref) # Reference
@@ -219,7 +241,7 @@ generate_hla_alighnment <- function(allele1, allele2, locus, filepath){
   # Step 8: Print annotated alignment block-by-block
   output_file <- paste0(filepath,locus,".txt")
   sink(output_file)
-  cat("CODON-ALIGNED ANNOTATED ALIGNMENT vs Reference: HLA00434", "\n")
+  cat(paste0("CODON-ALIGNED ANNOTATED ALIGNMENT vs Reference: ", IDref, " (", allele_ref, ")"), "\n")
   codon_size <- 3
   base_offset<- -25
   block_size <- 75
