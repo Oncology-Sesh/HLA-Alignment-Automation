@@ -178,14 +178,26 @@ for (align_file in alignment_files) {
   message(paste("\n=== Processing:", sample_id, gene, "==="))
 
   # Check if count files exist for this sample
+  # Handle different naming conventions:
+  # - MBC/HN samples: MBC_191_A_readcounts_plasma.wig / MBC_191_A_readcounts_normal.wig
+  # - PC samples: PC_17_A_readcounts_cf.wig / PC_17_A_readcounts_normal.wig (no HLA_, uses cf instead of plasma)
+
+  # Try plasma/normal naming first (MBC/HN samples)
   plasma_file <- paste0(sample_id, "_", gene, "_readcounts_plasma.wig")
   normal_file <- paste0(sample_id, "_", gene, "_readcounts_normal.wig")
 
   plasma_path <- file.path(counts_path, plasma_file)
   normal_path <- file.path(counts_path, normal_file)
 
+  # If not found, try cf/normal naming (PC samples)
+  if (!file.exists(plasma_path)) {
+    plasma_file <- paste0(sample_id, "_", gene, "_readcounts_cf.wig")
+    plasma_path <- file.path(counts_path, plasma_file)
+  }
+
   if (!file.exists(plasma_path) || !file.exists(normal_path)) {
     message(paste("  Skipping - count files not found"))
+    message(paste("    Tried:", plasma_file, "and", normal_file))
     next
   }
 
